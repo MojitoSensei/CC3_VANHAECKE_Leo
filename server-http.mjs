@@ -24,3 +24,5 @@ const server = http.createServer(requestListener);
 server.listen(port, host, () => {
   console.log(`Le serveur est en cours d'exécution sur http://${host}:${port}`);
 });
+
+console.log("NODE_ENV =", process.env.NODE_ENV);
